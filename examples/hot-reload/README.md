@@ -1,25 +1,8 @@
 ## Usage
 
-Setup virtualenv (optional)
-```bash
-virtualenv ve
-. ve/bin/activate
-```
+With Docker installed run
+`docker-compose down; docker-compose build && docker-compose up`
 
-Install dependencies
-```bash
-pip install -r requirements.txt
-npm install
-```
+Then the app in development should be accessible on http://localhost:5000/
 
-Run django server
-```bash
-./manage.py runserver
-```
-
-Run webpack dev server
-```bash
-node server.js
-```
-
-Now you can make changes to `frontend/js/app.jsx` and the changes will show up in the browser automagically.
+Now you can make changes to `frontend/js/app.jsx` and the changes should show up in the browser automagically.
